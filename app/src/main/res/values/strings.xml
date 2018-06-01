@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">toza</string>
+    <string name="click_back_to_exit">Click back to exit</string>
+    <string name="msg_please_wait">Please wait..</string>
+
+    <!--****************************** error messages *************************************-->
+    <string name="error_message_unable_logout">Unable to logout</string>
+    <string name="error_message_unable_message">Message module is not working</string>
+    <string name="error_message_unable_address_add">Unable to add address</string>
+    <string name="error_message_unable_update_user_profile">Unable to update user profile</string>
+    <string name="error_message_unable_calendar">Unable to update Calendar</string>
+    <string name="error_message_unable_schedule">Unable to update schedule</string>
+    <string name="error_message_unable_address_get">Unable to get addresses</string>
+    <string name="error_message_unable_passenger_add">Unable to add Passenger</string>
+    <string name="error_message_unable_passenger_get">Unable to get Passengers</string>
+    <!--****************************** Payment screen *************************************-->
+    <string name="pay_with_paypal">Pay with paypal</string>
+    <string name="pay_methods">Payment methods</string>
+    <string name="permission_warninig">This application needs to allow use of</string>
+    <string name="title_activity_maps">Direction</string>
+    <string name="approx">Approx</string>
+    <string name="zero_min">0 Min</string>
+
+
+</resources>
