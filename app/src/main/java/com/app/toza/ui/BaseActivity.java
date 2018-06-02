@@ -3,6 +3,7 @@ package com.app.toza.ui;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -25,6 +26,8 @@ import com.app.toza.custom.TfTextView;
 import com.app.toza.fragments.BaseFragment;
 import com.app.toza.helper.AppConstants;
 import com.app.toza.helper.Functions;
+import com.leo.simplearcloader.ArcConfiguration;
+import com.leo.simplearcloader.SimpleArcDialog;
 
 import java.util.Stack;
 
@@ -41,7 +44,7 @@ public class BaseActivity extends AppCompatActivity {
     private ProgressDialog dialog;
     public static int CALL_PERMISSION_REQUEST_CODE = 1225;
     public static int Location_PERMISSION_REQUEST_CODE = 1210;
-
+    SimpleArcDialog mDialog;
 
     public void setShowBackMessage(boolean showBackMessage) {
         this.showBackMessage = showBackMessage;
@@ -193,6 +196,23 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+
+    public void showCustomDialog(String loadingText,boolean isCancelable){
+        mDialog = new SimpleArcDialog(this);
+        ArcConfiguration configuration = new ArcConfiguration(this);
+
+        int arcColors[] = new int[]{Color.BLUE};
+        configuration.setColors(arcColors);
+        configuration.setText(loadingText);
+        mDialog.setCancelable(isCancelable);
+        mDialog.setConfiguration(configuration);
+        mDialog.show();
+    }
+    public void hideCustomDialog() {
+        if (mDialog != null) {
+            mDialog.dismiss();
+        }
+    }
     /**
      * this method load dashboard fragment
      */

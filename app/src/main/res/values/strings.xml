@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">toza</string>
+    <string name="app_name">Toza</string>
     <string name="click_back_to_exit">Click back to exit</string>
     <string name="msg_please_wait">Please wait..</string>
 
@@ -20,6 +20,5 @@
     <string name="title_activity_maps">Direction</string>
     <string name="approx">Approx</string>
     <string name="zero_min">0 Min</string>
-
 
 </resources>
