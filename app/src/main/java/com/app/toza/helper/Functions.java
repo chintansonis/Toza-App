@@ -318,6 +318,28 @@ public class Functions {
         }
     }
 
+    public static void showAlertDialogWithOKOption(Context mContext, String positiveText, String message, final DialogOptionsSelectedListener dialogOptionsSelectedListener) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+        builder.setMessage(message)
+                .setCancelable(true);
+
+        if (positiveText.trim().length() > 0) {
+            builder.setPositiveButton(positiveText, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    if (dialogOptionsSelectedListener != null)
+                        dialogOptionsSelectedListener.onSelect(true);
+                    dialog.dismiss();
+                }
+            });
+        }
+
+        AlertDialog alert = builder.create();
+        alert.setCanceledOnTouchOutside(false);
+        alert.setCancelable(false);
+        alert.show();
+    }
+
     public static void showAlertDialogWithTwoOption(Context mContext, String positiveText, String negativeText, String message, final DialogOptionsSelectedListener dialogOptionsSelectedListener) {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         builder.setMessage(message)

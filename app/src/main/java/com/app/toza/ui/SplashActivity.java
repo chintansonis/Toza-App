@@ -17,6 +17,7 @@ import com.app.toza.api.CallbackWrapper;
 import com.app.toza.api.RestClient;
 import com.app.toza.api.responsepojos.ResponseData;
 import com.app.toza.custom.MDToast;
+import com.app.toza.custom.TfTextView;
 import com.app.toza.helper.Functions;
 import com.app.toza.helper.PrefUtils;
 
@@ -24,9 +25,9 @@ import java.util.List;
 
 import retrofit2.Call;
 
-public class SplashActivity extends BaseActivity {
+public class SplashActivity extends BaseActivity implements View.OnClickListener{
     public LinearLayout liLoginLayout;
-    public TextView txtRegister,txtLogin;
+    public TfTextView txtRegister,txtLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,14 +47,12 @@ public class SplashActivity extends BaseActivity {
 
                 @Override
                 public void onFinish() {
-                    /*Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
-                    startActivity(intent);
-                    finish();*/
+
                 }
             }.start();
         } else {
 
-            new CountDownTimer(500,500){
+            new CountDownTimer(700,700){
 
                 @Override
                 public void onTick(long l) {
@@ -79,8 +78,8 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void init() {
-        txtLogin = (TextView)findViewById(R.id.txtLogin);
-        txtRegister = (TextView)findViewById(R.id.txtRegister);
+        txtLogin = (TfTextView)findViewById(R.id.txtLogin);txtLogin.setOnClickListener(this);
+        txtRegister = (TfTextView)findViewById(R.id.txtRegister);txtRegister.setOnClickListener(this);
         liLoginLayout = (LinearLayout)findViewById(R.id.liLoginLayout);
     }
 
@@ -100,5 +99,21 @@ public class SplashActivity extends BaseActivity {
                 Functions.showToast(SplashActivity.this, "Something went wrong", MDToast.TYPE_ERROR);
             }
         });
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.txtLogin:
+                    Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                break;
+            case R.id.txtRegister:
+                    Intent intentRegister = new Intent(SplashActivity.this,RegisterActivity.class);
+                    startActivity(intentRegister);
+                    finish();
+                break;
+        }
     }
 }

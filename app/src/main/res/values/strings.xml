@@ -21,4 +21,17 @@
     <string name="approx">Approx</string>
     <string name="zero_min">0 Min</string>
 
+    <string name="login">LOGIN</string>
+    <string name="submit">SUBMIT</string>
+    <string name="close">CLOSE</string>
+    <string name="new_user">NEW USER?</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="forgot_pass_heading">Recover your TOZA Password</string>
+    <string name="hint_username">enter username</string>
+    <string name="hint_email">enter email address</string>
+    <string name="hint_pass">enter password</string>
+    <string name="device_id">Your device Id is:</string>
+    <string name="device_id2">Device Id</string>
+    <string name="device_id_copy">Copied device id</string>
+    <string name="new_user2">Need an account? <b>SIGN UP</b></string>
 </resources>

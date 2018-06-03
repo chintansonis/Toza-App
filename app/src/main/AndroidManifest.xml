@@ -9,13 +9,14 @@
         android:name=".TozaApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:theme="@style/AppBaseTheme"
             android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,8 +24,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.LoginActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+
+
+        <activity
+            android:theme="@style/AppBaseTheme"
+            android:name=".ui.RegisterActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
     </application>
 
 </manifest>

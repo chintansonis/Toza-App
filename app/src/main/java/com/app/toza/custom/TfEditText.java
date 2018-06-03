@@ -34,6 +34,7 @@ public class TfEditText extends AppCompatEditText {
 //            setPrimaryColor(ContextCompat.getColor(_ctx, R.color.yellow));
 //            setAccentTypeface(Functions.getRegularFont(_ctx));
             setTypeface(Functions.getRegularFont(_ctx));
+
         } catch (Exception e) {
             e.printStackTrace();
         }
