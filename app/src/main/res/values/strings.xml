@@ -34,4 +34,16 @@
     <string name="device_id2">Device Id</string>
     <string name="device_id_copy">Copied device id</string>
     <string name="new_user2">Need an account? <b>SIGN UP</b></string>
+    <string name="welcome">WELCOME TO <font color="#ffffff">TOZA</font></string>
+
+    <string name="hint_fname">enter first name</string>
+    <string name="hint_lname">enter last name</string>
+    <string name="hint_phone">enter phone</string>
+    <string name="hint_cnf_pass">enter confirm password</string>
+    <string name="hint_add">enter address</string>
+    <string name="hint_physical_add">Physical Address</string>
+    <string name="hint_conf_things">Confidential Things!</string>
+    <string name="hint_we_will_contact">We will contact you</string>
+    <string name="hint_personal_details">Personal Details</string>
+
 </resources>
