@@ -17,12 +17,14 @@ import com.app.toza.R;
 import com.app.toza.custom.MDToast;
 import com.app.toza.custom.TfTextView;
 import com.app.toza.helper.Functions;
+import com.leo.simplearcloader.ArcConfiguration;
+import com.leo.simplearcloader.SimpleArcDialog;
 
 public class LoginActivity extends BaseActivity implements View.OnClickListener{
     public RelativeLayout bottomSheetLayout;
     BottomSheetBehavior sheetBehavior;
     ImageView topImage;
-    TfTextView txtForgotPassword,txtClose,txtSubmit;
+    TfTextView txtLogin,txtForgotPassword,txtClose,txtSubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +37,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
     private void init() {
         topImage = (ImageView) findViewById(R.id.topImage);topImage.setOnClickListener(this);
         txtForgotPassword = (TfTextView)findViewById(R.id.txtForgotPassword);txtForgotPassword.setOnClickListener(this);
+        txtLogin = (TfTextView)findViewById(R.id.txtLogin);txtLogin.setOnClickListener(this);
         txtClose = (TfTextView)findViewById(R.id.txtClose);txtClose.setOnClickListener(this);
         txtSubmit = (TfTextView)findViewById(R.id.txtSubmit);txtSubmit.setOnClickListener(this);
         bottomSheetLayout = (RelativeLayout)findViewById(R.id.linear_layout_bottom_sheet);
@@ -73,6 +76,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+            case R.id.txtLogin:
+                SimpleArcDialog mDialog = new SimpleArcDialog(this);
+                mDialog.setConfiguration(new ArcConfiguration(this));
+                mDialog.setTitle("Loading...");
+                mDialog.show();
+                break;
             case R.id.txtForgotPassword:
                     toggleBottomSheet();
                 break;

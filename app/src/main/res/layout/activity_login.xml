@@ -101,7 +101,7 @@
         android:textColor="#fff"
         android:textSize="@dimen/text_size_18"
         android:gravity="center"
-        android:id="@+id/etPassword1"
+        android:id="@+id/txtLogin"
         android:padding="@dimen/padding_12"
         android:background="@drawable/txt_textcorner"
         android:layout_width="match_parent"

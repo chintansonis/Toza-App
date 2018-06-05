@@ -197,22 +197,6 @@ public class BaseActivity extends AppCompatActivity {
     }
 
 
-    public void showCustomDialog(String loadingText,boolean isCancelable){
-        mDialog = new SimpleArcDialog(this);
-        ArcConfiguration configuration = new ArcConfiguration(this);
-
-        int arcColors[] = new int[]{Color.BLUE};
-        configuration.setColors(arcColors);
-        configuration.setText(loadingText);
-        mDialog.setCancelable(isCancelable);
-        mDialog.setConfiguration(configuration);
-        mDialog.show();
-    }
-    public void hideCustomDialog() {
-        if (mDialog != null) {
-            mDialog.dismiss();
-        }
-    }
     /**
      * this method load dashboard fragment
      */
