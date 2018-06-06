@@ -20,6 +20,9 @@ import com.app.toza.custom.MDToast;
 import com.app.toza.custom.TfTextView;
 import com.app.toza.helper.Functions;
 import com.app.toza.helper.PrefUtils;
+import com.hanks.htextview.base.AnimationListener;
+import com.hanks.htextview.base.HTextView;
+import com.hanks.htextview.typer.TyperTextView;
 
 import java.util.List;
 
@@ -28,6 +31,8 @@ import retrofit2.Call;
 public class SplashActivity extends BaseActivity implements View.OnClickListener{
     public LinearLayout liLoginLayout;
     public TfTextView txtRegister,txtLogin;
+    TyperTextView txtType;
+    int value = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,9 +83,34 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     }
 
     private void init() {
+        txtType = (TyperTextView)findViewById(R.id.txtType);
         txtLogin = (TfTextView)findViewById(R.id.txtLogin);txtLogin.setOnClickListener(this);
         txtRegister = (TfTextView)findViewById(R.id.txtRegister);txtRegister.setOnClickListener(this);
         liLoginLayout = (LinearLayout)findViewById(R.id.liLoginLayout);
+
+        txtType.setTextSize(48);
+        txtType.setCharIncrease(1);
+        txtType.setTyperSpeed(200);
+        txtType.animateText("TOZA");
+        txtType.setAnimationListener(new AnimationListener() {
+            @Override
+            public void onAnimationEnd(HTextView hTextView) {
+                if(value == 0) {
+                    value = 1;
+                    txtType.setTextSize(36);
+                    txtType.setTyperSpeed(100);
+                    txtType.animateText("Social Payment");
+                }else{
+                    value = 0;
+                    txtType.setTextSize(48);
+                    txtType.setTyperSpeed(200);
+                    txtType.animateText("TOZA");
+
+                }
+            }
+        });
+
+
     }
 
     private void callStateListApi() {

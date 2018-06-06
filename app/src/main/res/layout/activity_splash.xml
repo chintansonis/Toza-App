@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:attv="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg"
     tools:context=".ui.LoginActivity">
-
-    <ImageView
-        android:tint="#ffffff"
-        android:tintMode="src_atop"
-        android:padding="@dimen/padding_30"
-        android:layout_centerInParent="true"
-        android:src="@drawable/flat_banner_transparent"
+    <com.dynamitechetan.flowinggradient.FlowingGradient
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <com.hanks.htextview.typer.TyperTextView
+        android:id="@+id/txtType"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:text="TOZA"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/height_56"   />
     <LinearLayout
         android:visibility="gone"
         android:id="@+id/liLoginLayout"
@@ -29,7 +32,7 @@
             android:textSize="@dimen/text_size_20"
             app:isBold="true"
             android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:text="@string/login"
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -44,7 +47,7 @@
             android:textSize="@dimen/text_size_20"
             app:isBold="true"
             android:gravity="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/white"
             android:text="@string/new_user"
             android:layout_weight="1"
             android:layout_width="match_parent"
