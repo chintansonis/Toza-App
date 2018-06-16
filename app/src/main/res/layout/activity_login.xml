@@ -55,6 +55,7 @@
     app:helperTextColor="@color/white"
     app:primaryColor="@color/white"
     app:secondaryColor="@color/white"
+    app:panelBackgroundColor="#80808080"
     app:labelText="@string/hint_email"
     app:hasFocus="false"
     app:maxCharacters="20">
@@ -78,6 +79,7 @@
         app:helperTextColor="@color/white"
         app:primaryColor="@color/white"
         app:secondaryColor="@color/white"
+        app:panelBackgroundColor="#80808080"
         app:endIcon="@drawable/ic_visibility_black_24dp"
         app:labelText="@string/hint_pass"
         app:hasFocus="false"
@@ -94,6 +96,17 @@
 
     </com.app.toza.MEditText.TextFieldBoxes>
 
+
+    <com.app.toza.custom.TfTextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/text_size_18"
+        android:text="@string/forgot_pass"
+        android:gravity="end"
+        app:isBold="true"
+        android:padding="@dimen/padding_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
 
     <com.app.toza.custom.TfTextView

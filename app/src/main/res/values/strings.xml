@@ -45,6 +45,7 @@
     <string name="hint_conf_things">Confidential Things!</string>
     <string name="hint_we_will_contact">We will contact you</string>
     <string name="hint_personal_details">Personal Details</string>
+    <string name="total_bal">Total Balance</string>
 
     <string name="icon">icon</string>
     <string name="counter_label_text_constructor" formatted="false">%s%s%s%s</string>
