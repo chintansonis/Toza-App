@@ -74,11 +74,9 @@
     <LinearLayout
         android:layout_above="@id/bottom"
         android:layout_marginTop="@dimen/padding_15"
-        android:layout_alignParentBottom="true"
         android:orientation="vertical"
         android:gravity="center"
         android:id="@+id/thirdLinear"
-        android:layout_below="@+id/secondLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -95,6 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
                 <LinearLayout
+                    android:id="@+id/liToza"
                     android:gravity="center"
                     android:layout_weight="1"
                     android:orientation="vertical"
@@ -113,6 +112,7 @@
                         android:layout_height="wrap_content" />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/liCircle"
                     android:gravity="center"
                     android:layout_weight="1"
                     android:orientation="vertical"
@@ -131,6 +131,7 @@
                         android:layout_height="wrap_content" />
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/liWallet"
                     android:gravity="center"
                     android:layout_weight="1"
                     android:orientation="vertical"
@@ -158,6 +159,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
+                android:id="@+id/liVirtualCard"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_weight="1"
@@ -177,6 +179,7 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/liInternationalTransfer"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_weight="1"

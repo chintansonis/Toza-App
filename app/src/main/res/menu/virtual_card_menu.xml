@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/faboptions_favorite"
+        android:icon="@drawable/credit_card"
+        android:title="MY CARD" />
+
+    <item
+        android:id="@+id/faboptions_textsms"
+        android:icon="@drawable/new_card"
+        android:title="APPLY NEW CARD" />
+
+    <item
+        android:id="@+id/faboptions_download"
+        android:icon="@drawable/history_img2"
+        android:title="VIEW HISTORY" />
+
+
+</menu>

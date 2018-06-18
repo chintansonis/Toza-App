@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/faboptions_favorite"
+        android:icon="@drawable/mycircle"
+        android:title="MY CIRCLE" />
+
+    <item
+        android:id="@+id/faboptions_textsms"
+        android:icon="@drawable/circle_new"
+        android:title="CREATE NEW CIRCLE" />
+
+
+</menu>
