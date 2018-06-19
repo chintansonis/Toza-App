@@ -33,4 +33,7 @@
     <color name="per70white">#46ffffff</color>
     <color name="per50white">#32ffffff</color>
     <color name="per10white">#0affffff</color>
+
+
+    <color name="bluse_shade1">#1aafb8</color>
 </resources>

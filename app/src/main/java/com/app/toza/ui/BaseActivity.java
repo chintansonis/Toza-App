@@ -215,7 +215,7 @@ public class BaseActivity extends AppCompatActivity {
         switch (selectedPosition) {
             case 1:
                 ((AppCompatImageView) findViewById(R.id.ivFooterHome)).setImageResource(R.drawable.ic_home_selected);
-                ((AppCompatImageView) findViewById(R.id.ivFooterSearch)).setImageResource(R.drawable.ic_search);
+                ((AppCompatImageView) findViewById(R.id.ivFooterSearch)).setImageResource(R.drawable.euro);
                 ((AppCompatImageView) findViewById(R.id.ivFooterMenu)).setImageResource(R.drawable.ic_cart);
                 ((AppCompatImageView) findViewById(R.id.ivFooterUser)).setImageResource(R.drawable.ic_user);
 
@@ -248,7 +248,7 @@ public class BaseActivity extends AppCompatActivity {
                 break;
             case 3:
                 ((AppCompatImageView) findViewById(R.id.ivFooterHome)).setImageResource(R.drawable.ic_home);
-                ((AppCompatImageView) findViewById(R.id.ivFooterSearch)).setImageResource(R.drawable.ic_search);
+                ((AppCompatImageView) findViewById(R.id.ivFooterSearch)).setImageResource(R.drawable.euro);
                 ((AppCompatImageView) findViewById(R.id.ivFooterMenu)).setImageResource(R.drawable.ic_cart_selected);
                 ((AppCompatImageView) findViewById(R.id.ivFooterUser)).setImageResource(R.drawable.ic_user);
 
@@ -265,7 +265,7 @@ public class BaseActivity extends AppCompatActivity {
                 break;
             case 4:
                 ((AppCompatImageView) findViewById(R.id.ivFooterHome)).setImageResource(R.drawable.ic_home);
-                ((AppCompatImageView) findViewById(R.id.ivFooterSearch)).setImageResource(R.drawable.ic_search);
+                ((AppCompatImageView) findViewById(R.id.ivFooterSearch)).setImageResource(R.drawable.euro);
                 ((AppCompatImageView) findViewById(R.id.ivFooterMenu)).setImageResource(R.drawable.ic_cart);
                 ((AppCompatImageView) findViewById(R.id.ivFooterUser)).setImageResource(R.drawable.ic_user_selected);
 

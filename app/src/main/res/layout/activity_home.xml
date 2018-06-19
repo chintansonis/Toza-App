@@ -214,8 +214,7 @@
             android:id="@+id/fab_options"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            app:button_menu="@menu/home_fab_menu"/>
+            android:layout_gravity="bottom"/>
     </RelativeLayout>
 
 

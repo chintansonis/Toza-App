@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/faboptions_favorite"
+        android:id="@+id/sendMoney"
         android:icon="@drawable/money_send"
         android:title="SEND MONEY" />
 
     <item
-        android:id="@+id/faboptions_textsms"
+        android:id="@+id/requestmoney"
         android:icon="@drawable/money_recieve"
         android:title="REQUEST MONEY" />
 
@@ -17,7 +17,7 @@
 
 
     <item
-        android:id="@+id/faboptions_share"
+        android:id="@+id/myrequest"
         android:icon="@drawable/request"
         android:title="MY REQUEST" />
 </menu>
