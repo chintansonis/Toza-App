@@ -3,7 +3,7 @@
     <item
         android:id="@+id/faboptions_favorite"
         android:icon="@drawable/topup"
-        android:title="TOPUP" />
+        android:title="TOPUP WALLET" />
 
     <item
         android:id="@+id/faboptions_textsms"
