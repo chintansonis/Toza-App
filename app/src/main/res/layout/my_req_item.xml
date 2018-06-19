@@ -80,7 +80,7 @@
             <com.app.toza.custom.TfTextView
 
                 android:textColor="@color/gray_material"
-                android:textSize="@dimen/text_size_15"
+                android:textSize="@dimen/text_size_13"
                 android:layout_gravity="center"
                 android:text="Today Rate (1$ = 1EUR)"
                 android:layout_width="wrap_content"

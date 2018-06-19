@@ -89,7 +89,7 @@
 
         <com.app.toza.custom.TfTextView
             android:textColor="#000"
-            android:textSize="@dimen/text_size_18"
+            android:textSize="@dimen/text_size_15"
             android:layout_marginLeft="@dimen/padding_15"
             android:layout_gravity="left"
             android:text="@string/name_hint"
@@ -99,7 +99,7 @@
         <com.app.toza.custom.TfTextView
             android:layout_marginTop="@dimen/padding_8"
             android:textColor="#000"
-            android:textSize="@dimen/text_size_18"
+            android:textSize="@dimen/text_size_15"
             android:layout_marginLeft="@dimen/padding_15"
             android:layout_gravity="left"
             android:text="@string/country_hint"
