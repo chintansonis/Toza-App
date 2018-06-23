@@ -68,11 +68,21 @@
         android:layout_height="0.5dp"/>
         <LinearLayout
             android:layout_marginTop="@dimen/text_size_16"
-            android:gravity="center"
+            android:gravity="left"
             android:layout_gravity="center"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <com.app.toza.custom.TfTextView
+
+                android:textColor="@color/gray_material"
+                android:textSize="@dimen/text_size_13"
+                android:layout_gravity="center"
+                android:text="Requested Amount "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
             <com.app.toza.custom.TfTextView
                 android:layout_marginRight="@dimen/height_4"
                 android:textColor="@color/bluse_shade1"
@@ -95,7 +105,7 @@
 
             android:textColor="@color/gray_material"
             android:textSize="@dimen/text_size_13"
-            android:layout_gravity="center"
+            android:layout_gravity="left"
             android:text="Today Rate (1$ = 1EUR)"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
