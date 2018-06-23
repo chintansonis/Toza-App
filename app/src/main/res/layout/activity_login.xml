@@ -118,6 +118,7 @@
         android:text="@string/login"
         android:gravity="center"
         android:padding="@dimen/padding_15"
+        app:isBold="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

@@ -103,6 +103,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
                             mDialog.dismiss();
                             Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                             startActivity(intent);
+                            finish();
 
                         }
                     }.start();

@@ -64,5 +64,8 @@
     <string name="rcpt_rcv">Recipient Receive (1$ = 1EUR)</string>
     <string name="euro">&#8364;</string>
     <string name="sent">SENT</string>
+    <string name="show_front">Show Front</string>
+    <string name="show_back">Show Back</string>
     <string name="recvd">RECEIVED</string>
+    <string name="add_new_card">ADD NEW CARD</string>
 </resources>

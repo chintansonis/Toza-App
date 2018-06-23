@@ -154,7 +154,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 VirtualCardSheet();
                 break;
             case R.id.liInternationalTransfer:
-
+                startActivity(new Intent(this,InterantionalTransferViewActivity.class));
                 break;
             case R.id.myProfile:
                     startActivity(new Intent(this,ProfileActivity.class));

@@ -19,11 +19,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="stateHidden|adjustPan">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.LoginActivity"
@@ -32,35 +28,49 @@
         <activity
             android:name=".ui.RegisterActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppBaseTheme"></activity>
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.TozaSendMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.TozaRequestMoneyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.TozaRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
-            android:name=".ui.HomeActivity">
-
-        </activity>
-            <activity
-                android:windowSoftInputMode="adjustNothing"
-                android:name=".ui.ProfileActivity"
-                android:screenOrientation="portrait"
-                android:theme="@style/AppBaseTheme"></activity>
-        <activity
             android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.TozaSendMoneyActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppBaseTheme"></activity>
-
+            android:name=".ui.InterantionalTransferViewActivity"></activity>
         <activity
-            android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.TozaRequestMoneyActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppBaseTheme"></activity>
-
-        <activity
+            android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.TozaRequestActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppBaseTheme"></activity>
+            android:name=".ui.InterantionalTransferNewCardActivity"></activity>
     </application>
 
 </manifest>
