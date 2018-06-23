@@ -52,6 +52,8 @@
     <string name="total_bal">Total Balance</string>
     <string name="next">NEXT</string>
     <string name="receipent_mobile_number">Recipient Mobile Number</string>
+    <string name="receipent_country">Recipient Country</string>
+    <string name="receipent_state">Recipient State</string>
     <string name="enter_mobile_number">Enter Mobile Number</string>
 
     <string name="icon">icon</string>
@@ -62,10 +64,20 @@
     <string name="curr_bal">Current Balance</string>
     <string name="transfer_amt">Transfer Amount</string>
     <string name="rcpt_rcv">Recipient Receive (1$ = 1EUR)</string>
+    <string name="payable_amt">Payable Amount (1$ = 1EUR)</string>
+    <string name="rate"><b>Rate: </b>$1 = 1EUR</string>
+    <string name="transcation_charge"><b>Transcation Charge: </b>$1</string>
     <string name="euro">&#8364;</string>
     <string name="sent">SENT</string>
     <string name="show_front">Show Front</string>
     <string name="show_back">Show Back</string>
     <string name="recvd">RECEIVED</string>
     <string name="add_new_card">ADD NEW CARD</string>
+
+
+    <string-array name="my_array">
+        <item>India</item>
+        <item>USA</item>
+        <item>UK</item>
+    </string-array>
 </resources>

@@ -12,7 +12,7 @@ import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 import com.cooltechworks.creditcarddesign.CreditCardView;
 
-public class InterantionalTransferViewActivity extends AppCompatActivity implements View.OnClickListener{
+public class VirtualCardViewActivity extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
     LinearLayout cardContainer;
     TfTextView txtSubmit,txtAction;
@@ -21,7 +21,7 @@ public class InterantionalTransferViewActivity extends AppCompatActivity impleme
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interantional_transfer_view);
+        setContentView(R.layout.activity_virtual_card_view);
 
         initToolbar();
         init();
@@ -88,9 +88,6 @@ public class InterantionalTransferViewActivity extends AppCompatActivity impleme
                         txtAction.setText(R.string.show_back);
                     }
                 break;
-            case R.id.txtSubmit:
-                startActivity(new Intent(this,InterantionalTransferNewCardActivity.class));
-            break;
         }
     }
 

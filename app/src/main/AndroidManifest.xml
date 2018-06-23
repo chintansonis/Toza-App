@@ -18,9 +18,7 @@
             android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
-            android:windowSoftInputMode="stateHidden|adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
         <activity
             android:name=".ui.LoginActivity"
             android:screenOrientation="portrait"
@@ -33,9 +31,11 @@
             android:name=".ui.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".ui.ProfileActivity"
@@ -58,28 +58,25 @@
             android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="adjustNothing" />
         <activity
+            android:name=".ui.VirtualCardViewActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
-            android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.InterantionalTransferViewActivity"></activity>
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.VirtualNewCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing"></activity>
         <activity
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.InterantionalTransferNewCardActivity"></activity>
-
-        <activity
-            android:screenOrientation="portrait"
-            android:theme="@style/AppBaseTheme"
-            android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.ForgotPasswordActivity">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".ui.InterNationalTansferActivity"></activity>
     </application>
 
 </manifest>

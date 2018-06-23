@@ -9,12 +9,12 @@ import android.view.View;
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class InterantionalTransferNewCardActivity extends AppCompatActivity implements View.OnClickListener{
+public class VirtualNewCardActivity extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interantional_transfer_new_card);
+        setContentView(R.layout.activity_virtual_new_card);
 
         initToolbar();
         init();

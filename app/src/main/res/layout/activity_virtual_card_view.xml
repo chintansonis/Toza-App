@@ -31,6 +31,7 @@
         android:layout_height="wrap_content" />
 
     <com.app.toza.custom.TfTextView
+        android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:lines="1"
         android:text="@string/add_new_card"

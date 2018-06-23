@@ -2,7 +2,6 @@ package com.app.toza.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.view.MenuItem;
 import android.view.View;
@@ -81,6 +80,15 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 .setClick(new MenuItem.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.mycard:
+                                startActivity(new Intent(HomeActivity.this, VirtualCardViewActivity.class));
+                                break;
+                            case R.id.newcard:
+                                startActivity(new Intent(HomeActivity.this, VirtualNewCardActivity.class));
+                                break;
+
+                        }
                         return false;
                     }
                 }).show();
@@ -154,7 +162,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 VirtualCardSheet();
                 break;
             case R.id.liInternationalTransfer:
-                startActivity(new Intent(this,InterantionalTransferViewActivity.class));
+                startActivity(new Intent(this,InterNationalTansferActivity.class));
                 break;
             case R.id.myProfile:
                     startActivity(new Intent(this,ProfileActivity.class));
