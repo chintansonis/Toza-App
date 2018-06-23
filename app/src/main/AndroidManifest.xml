@@ -34,11 +34,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity
@@ -71,6 +67,19 @@
             android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="adjustNothing"
             android:name=".ui.InterantionalTransferNewCardActivity"></activity>
+
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing"
+            android:name=".ui.ForgotPasswordActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

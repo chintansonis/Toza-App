@@ -83,7 +83,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
                     startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
                 break;
             case R.id.txtForgotPassword:
-                    MDToast.makeText(LoginActivity.this,"Development In Process",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(LoginActivity.this,ForgotPasswordActivity.class));
                 break;
             case R.id.txtLogin:
                         mDialog = new SimpleArcDialog(this);
