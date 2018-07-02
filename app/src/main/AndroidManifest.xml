@@ -18,7 +18,11 @@
             android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
-            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+
+
+
+        </activity>
         <activity
             android:name=".ui.LoginActivity"
             android:screenOrientation="portrait"
@@ -71,12 +75,28 @@
             android:name=".ui.ForgotPasswordActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
-            android:windowSoftInputMode="adjustNothing"></activity>
+            android:windowSoftInputMode="adjustNothing" />
         <activity
+            android:name=".ui.InterNationalTansferActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
-            android:windowSoftInputMode="adjustNothing"
-            android:name=".ui.InterNationalTansferActivity"></activity>
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity android:name=".ui.LanguageSelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing"></activity>
+
+        <activity
+            android:name=".ui.WalletWithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
     </application>
 
 </manifest>

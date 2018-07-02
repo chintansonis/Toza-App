@@ -135,14 +135,30 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.txtLogin:
-                    Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+
+                if(!PrefUtils.isLanguageSet(SplashActivity.this).equalsIgnoreCase("")) {
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                     startActivity(intent);
                     finish();
-                break;
+                }else{
+                    Intent intent = new Intent(SplashActivity.this, LanguageSelectionActivity.class)
+                            .putExtra("type","1");
+                    startActivity(intent);
+                    finish();
+                }
+
+                    break;
             case R.id.txtRegister:
-                    Intent intentRegister = new Intent(SplashActivity.this,RegisterActivity.class);
+                if(!PrefUtils.isLanguageSet(SplashActivity.this).equalsIgnoreCase("")) {
+                    Intent intentRegister = new Intent(SplashActivity.this, RegisterActivity.class);
                     startActivity(intentRegister);
                     finish();
+                }else {
+                    Intent intentRegister = new Intent(SplashActivity.this, LanguageSelectionActivity.class)
+                            .putExtra("type","2");
+                    startActivity(intentRegister);
+                    finish();
+                }
                 break;
         }
     }

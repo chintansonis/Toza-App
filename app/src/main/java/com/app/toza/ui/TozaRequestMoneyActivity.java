@@ -12,7 +12,7 @@ import android.view.animation.BounceInterpolator;
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class TozaRequestMoneyActivity extends AppCompatActivity implements View.OnClickListener{
+public class TozaRequestMoneyActivity extends BaseActivity implements View.OnClickListener{
     Toolbar toolbar;
     private TfTextView txtSubmit;
     @Override

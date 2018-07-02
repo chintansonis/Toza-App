@@ -104,6 +104,12 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 .setClick(new MenuItem.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.withdrawal:
+                                startActivity(new Intent(HomeActivity.this, WalletWithdrawActivity.class));
+                                break;
+
+                        }
                         return false;
                     }
                 }).show();
@@ -177,7 +183,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 break;
 
             case R.id.setting:
-                Toast.makeText(this, "Setting", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(this,SettingActivity.class));
                 break;
         }
     }

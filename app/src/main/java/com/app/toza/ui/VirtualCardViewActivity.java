@@ -12,7 +12,7 @@ import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 import com.cooltechworks.creditcarddesign.CreditCardView;
 
-public class VirtualCardViewActivity extends AppCompatActivity implements View.OnClickListener{
+public class VirtualCardViewActivity extends BaseActivity implements View.OnClickListener{
     Toolbar toolbar;
     LinearLayout cardContainer;
     TfTextView txtSubmit,txtAction;

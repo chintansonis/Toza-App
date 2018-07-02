@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/testbg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.RegisterActivity">
+
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <LinearLayout
+       android:layout_margin="@dimen/padding_8"
+       android:layout_below="@+id/toolbar"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <android.support.v7.widget.CardView
+           android:layout_marginTop="@dimen/height_15"
+           xmlns:card_view="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/card_view"
+           card_view:cardBackgroundColor="#dfffffff"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           card_view:cardCornerRadius="4dp">
+
+           <LinearLayout
+               android:layout_gravity="center"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_gravity="center"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <com.app.toza.custom.TfTextView
+               android:textSize="@dimen/text_size_16"
+               android:layout_marginLeft="@dimen/padding_15"
+               android:layout_gravity="center"
+               android:textColor="@color/grey1"
+               app:isBold="true"
+               android:text="@string/change_lang"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <Spinner
+               android:entries="@array/change_language"
+               android:layout_gravity="center"
+               android:padding="@dimen/height_15"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"></Spinner>
+
+
+       </LinearLayout>
+
+           <com.app.toza.custom.TfTextView
+               android:layout_marginBottom="@dimen/height_15"
+               android:textSize="@dimen/text_size_16"
+               android:layout_marginLeft="@dimen/padding_15"
+               android:layout_gravity="left"
+               android:textColor="@color/grey1"
+               app:isBold="true"
+               android:text="@string/logout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+   </LinearLayout>
+       </android.support.v7.widget.CardView>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,47 +1,41 @@
 package com.app.toza.ui;
 
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.BounceInterpolator;
 
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class TozaRequestActivity extends BaseActivity implements View.OnClickListener{
+public class WalletWithdrawActivity extends BaseActivity implements View.OnClickListener{
     Toolbar toolbar;
-    private RecyclerView recycler_view;
+    private CardView cardDetail;
+    private TfTextView txtSubmit,txtNext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toza_request);
+        setContentView(R.layout.activity_wallet_withdraw);
+
         initToolbar();
         init();
     }
 
     private void init() {
-        recycler_view = (RecyclerView)findViewById(R.id.recycler_view);
-
-
-        MyRequestAdapter mAdapter = new MyRequestAdapter(TozaRequestActivity.this);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recycler_view.setLayoutManager(mLayoutManager);
-        recycler_view.setItemAnimator(new DefaultItemAnimator());
-        recycler_view.setAdapter(mAdapter);
-
+        cardDetail = (CardView)findViewById(R.id.cardDetail);
+        txtSubmit = (TfTextView)findViewById(R.id.txtSubmit);
+        txtNext = (TfTextView)findViewById(R.id.txtNext);txtNext.setOnClickListener(this);
     }
-
 
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         TfTextView txtTitle = (TfTextView) toolbar.findViewById(R.id.txtTitleAppBar);
         txtTitle.setTextSize(getResources().getDimension(R.dimen.padding_8));
-        txtTitle.setText("MY REQUEST");
+        txtTitle.setText("WITHDRAWAL");
         this.setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
@@ -59,9 +53,21 @@ public class TozaRequestActivity extends BaseActivity implements View.OnClickLis
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-
+            case R.id.txtNext: playAnimation();
+                break;
         }
     }
 
+    private void playAnimation(){
+        cardDetail.setVisibility(View.VISIBLE);
+        ObjectAnimator animator = ObjectAnimator.ofFloat(cardDetail, "translationX", 0, 50, 0);
+        animator.setInterpolator(new BounceInterpolator());
+        animator.setStartDelay(100);
+        animator.setDuration(1000);
+        animator.start();
+
+        txtSubmit.setVisibility(View.VISIBLE);
+
+    }
 
 }

@@ -6,7 +6,7 @@
         android:title="TOPUP WALLET" />
 
     <item
-        android:id="@+id/faboptions_textsms"
+        android:id="@+id/withdrawal"
         android:icon="@drawable/withdraw"
         android:title="WITHDRAW" />
 

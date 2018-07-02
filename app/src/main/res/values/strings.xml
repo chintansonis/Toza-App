@@ -30,6 +30,8 @@
     <string name="new_user">NEW USER?</string>
     <string name="forgot_pass">Forgot Password?</string>
     <string name="forgot_pass_heading">Recover your TOZA Password</string>
+    <string name="withdraw_money">Withdraw Money</string>
+    <string name="language_pref">Select Your Preferred Language</string>
     <string name="hint_username">Enter username</string>
     <string name="hint_email">Enter email address</string>
     <string name="hint_pass">Enter password</string>
@@ -43,6 +45,7 @@
     <string name="hint_lname">Enter last name</string>
     <string name="hint_phone">Enter phone</string>
     <string name="hint_amount">Enter Amount</string>
+    <string name="hint_remarks">Enter Remarks</string>
     <string name="hint_cnf_pass">Enter confirm password</string>
     <string name="hint_add">Enter address</string>
     <string name="hint_physical_add">Physical Address</string>
@@ -53,6 +56,8 @@
     <string name="next">NEXT</string>
     <string name="receipent_mobile_number">Recipient Mobile Number</string>
     <string name="receipent_country">Recipient Country</string>
+    <string name="change_lang">Change Language</string>
+    <string name="logout">Logout</string>
     <string name="receipent_state">Recipient State</string>
     <string name="enter_mobile_number">Enter Mobile Number</string>
 
@@ -62,6 +67,9 @@
     <string name="name_hint"><b>Name: </b> Krishna Patel </string>
     <string name="country_hint"><b>Country: </b> India </string>
     <string name="curr_bal">Current Balance</string>
+    <string name="with_amt">Withdrawal Amount</string>
+    <string name="amount">Amount</string>
+    <string name="comm_chrg">Commission Charge</string>
     <string name="transfer_amt">Transfer Amount</string>
     <string name="rcpt_rcv">Recipient Receive (1$ = 1EUR)</string>
     <string name="payable_amt">Payable Amount (1$ = 1EUR)</string>
@@ -79,5 +87,11 @@
         <item>India</item>
         <item>USA</item>
         <item>UK</item>
+    </string-array>
+
+
+    <string-array name="change_language">
+        <item>English</item>
+        <item>France</item>
     </string-array>
 </resources>

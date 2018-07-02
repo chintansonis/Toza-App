@@ -13,4 +13,13 @@ public class PrefUtils {
         return val;
     }
 
+
+    public static void setLanguage(Context ctx, String val){
+        Prefs.with(ctx).save("Language",val);
+    }
+    public static String isLanguageSet(Context ctx){
+        String val = Prefs.with(ctx).getString("Language","");
+        return val;
+    }
+
 }

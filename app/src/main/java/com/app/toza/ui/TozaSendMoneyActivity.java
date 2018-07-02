@@ -14,7 +14,7 @@ import android.view.animation.RotateAnimation;
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class TozaSendMoneyActivity extends AppCompatActivity implements View.OnClickListener{
+public class TozaSendMoneyActivity extends BaseActivity implements View.OnClickListener{
     Toolbar toolbar;
     private CardView cardDetail;
     private TfTextView txtSubmit,txtNext;

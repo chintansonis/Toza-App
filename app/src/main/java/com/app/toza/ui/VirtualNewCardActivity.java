@@ -9,7 +9,7 @@ import android.view.View;
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class VirtualNewCardActivity extends AppCompatActivity implements View.OnClickListener{
+public class VirtualNewCardActivity extends BaseActivity implements View.OnClickListener{
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

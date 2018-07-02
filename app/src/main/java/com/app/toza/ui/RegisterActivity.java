@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 import com.app.toza.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

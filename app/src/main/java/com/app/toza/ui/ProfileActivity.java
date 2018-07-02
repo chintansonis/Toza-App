@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends BaseActivity {
     Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,7 +13,7 @@ import android.widget.LinearLayout;
 import com.app.toza.R;
 import com.app.toza.custom.TfTextView;
 
-public class InterNationalTansferActivity extends AppCompatActivity implements View.OnClickListener{
+public class InterNationalTansferActivity extends BaseActivity implements View.OnClickListener{
 
     Toolbar toolbar;
     private CardView cardDetail;
