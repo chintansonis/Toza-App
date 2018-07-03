@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/faboptions_favorite"
+        android:id="@+id/top_wallet"
         android:icon="@drawable/topup"
-        android:title="TOPUP WALLET" />
+        android:title="@string/top_up_wallet" />
 
     <item
         android:id="@+id/withdrawal"
         android:icon="@drawable/withdraw"
-        android:title="WITHDRAW" />
+        android:title="@string/withdraw" />
 
     <item
         android:id="@+id/faboptions_download"
         android:icon="@drawable/history_img"
-        android:title="VIEW HISTORY" />
+        android:title="@string/view_history" />
 
 
 </menu>

@@ -1,7 +1,9 @@
 package com.app.toza.ui;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.GridLayoutManager;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +14,8 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.app.toza.R;
+import com.app.toza.ui.circlePayment.CircleActivity;
+import com.app.toza.ui.circlePayment.CreateNewCircleActivity;
 import com.joaquimley.faboptions.FabOptions;
 
 import ru.whalemare.sheetmenu.SheetMenu;
@@ -19,7 +23,7 @@ import ru.whalemare.sheetmenu.SheetMenu;
 public class HomeActivity extends BaseActivity implements View.OnClickListener{
     private ImageView moneyBag;
     private LinearLayout liToza,liCircle,liWallet,liVirtualCard,liInternationalTransfer;
-
+    private String[] topWalletItems = {"Topup by Card","Request Topup"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +69,15 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                 .setClick(new MenuItem.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.my_circle:
+                                startActivity(new Intent(HomeActivity.this, CircleActivity.class));
+                                break;
+                            case R.id.create_new_circle:
+                                startActivity(new Intent(HomeActivity.this, CreateNewCircleActivity.class));
+                                break;
+
+                        }
                         return false;
                     }
                 }).show();
@@ -105,6 +118,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()) {
+                            case R.id.top_wallet:
+                                    showPopup();
+                                break;
                             case R.id.withdrawal:
                                 startActivity(new Intent(HomeActivity.this, WalletWithdrawActivity.class));
                                 break;
@@ -116,6 +132,26 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener{
 
     }
 
+    private void showPopup() {
+        new AlertDialog.Builder(this)
+                .setSingleChoiceItems(topWalletItems, 0, null)
+                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        dialog.dismiss();
+                        int selectedPosition = ((AlertDialog)dialog).getListView().getCheckedItemPosition();
+                           if(selectedPosition == 0){
+                               startActivity(new Intent(HomeActivity.this, TopByCardActivity.class));
+                           }else{
+                               startActivity(new Intent(HomeActivity.this, RequestTopUpActivity.class));
+                           }
+                    }
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+              }).show();
+    }
 
 
     private void init() {

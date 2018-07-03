@@ -25,6 +25,7 @@
     <string name="submit">SUBMIT</string>
     <string name="update">UPDATE</string>
     <string name="transfer">TRANSFER</string>
+    <string name="create_cricle">CREATE CIRCLE</string>
     <string name="request">REQUEST</string>
     <string name="close">CLOSE</string>
     <string name="new_user">NEW USER?</string>
@@ -56,6 +57,7 @@
     <string name="next">NEXT</string>
     <string name="receipent_mobile_number">Recipient Mobile Number</string>
     <string name="receipent_country">Recipient Country</string>
+    <string name="add_money">Add Money</string>
     <string name="change_lang">Change Language</string>
     <string name="logout">Logout</string>
     <string name="receipent_state">Recipient State</string>
@@ -67,6 +69,7 @@
     <string name="name_hint"><b>Name: </b> Krishna Patel </string>
     <string name="country_hint"><b>Country: </b> India </string>
     <string name="curr_bal">Current Balance</string>
+    <string name="curr">Currency</string>
     <string name="with_amt">Withdrawal Amount</string>
     <string name="amount">Amount</string>
     <string name="comm_chrg">Commission Charge</string>
@@ -81,6 +84,12 @@
     <string name="show_back">Show Back</string>
     <string name="recvd">RECEIVED</string>
     <string name="add_new_card">ADD NEW CARD</string>
+    <string name="top_up_wallet">TOPUP WALLET</string>
+    <string name="withdraw">WITHDRAW</string>
+    <string name="view_history">VIEW HISTORY</string>
+    <string name="ok">OK</string>
+    <string name="my_circle">MY CIRCLE</string>
+    <string name="create_new_circle">CREATE NEW CIRCLE</string>
 
 
     <string-array name="my_array">
@@ -93,5 +102,18 @@
     <string-array name="change_language">
         <item>English</item>
         <item>France</item>
+    </string-array>
+
+    <string-array name="currency">
+        <item>USD</item>
+        <item>EURO</item>
+    </string-array>
+
+
+    <string-array name="cycle">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
     </string-array>
 </resources>

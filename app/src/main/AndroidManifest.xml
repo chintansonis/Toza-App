@@ -97,6 +97,37 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="adjustNothing" />
+
+
+        <activity
+            android:name=".ui.TopByCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".ui.RequestTopUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".ui.circlePayment.CircleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".ui.circlePayment.MyCircleDetailedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <activity
+            android:name=".ui.circlePayment.CreateNewCircleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
     </application>
 
 </manifest>
