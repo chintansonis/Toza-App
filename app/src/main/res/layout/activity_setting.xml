@@ -59,15 +59,20 @@
 
        </LinearLayout>
 
+
            <com.app.toza.custom.TfTextView
+               android:layout_marginTop="@dimen/padding_15"
+               android:background="@color/colorPrimaryDark"
                android:layout_marginBottom="@dimen/height_15"
                android:textSize="@dimen/text_size_16"
                android:layout_marginLeft="@dimen/padding_15"
-               android:layout_gravity="left"
-               android:textColor="@color/grey1"
+               android:layout_marginRight="@dimen/padding_15"
+               android:gravity="center"
+               android:textColor="@color/white"
                app:isBold="true"
+               android:padding="@dimen/padding_10"
                android:text="@string/logout"
-               android:layout_width="wrap_content"
+               android:layout_width="match_parent"
                android:layout_height="wrap_content" />
 
    </LinearLayout>

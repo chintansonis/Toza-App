@@ -92,7 +92,7 @@
                 android:textColor="@color/grey"
                 android:textSize="@dimen/text_size_16"
                 android:layout_gravity="center_vertical"
-                android:text="Total Cycle"
+                android:text="Cycle"
                 android:layout_width="@dimen/height_140"
                 android:layout_height="wrap_content" />
 
@@ -103,7 +103,7 @@
                 android:textColor="@color/grey"
                 android:textSize="@dimen/text_size_16"
                 android:layout_gravity="center_vertical"
-                android:text="4"
+                android:text="Monthly"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -131,7 +131,7 @@
                 android:textColor="@color/grey"
                 android:textSize="@dimen/text_size_16"
                 android:layout_gravity="center_vertical"
-                android:text="3/4"
+                android:text="3/4 Cycles"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

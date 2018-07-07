@@ -92,7 +92,7 @@
 
                     <com.app.toza.custom.TfEditText
                         android:layout_weight="1"
-                        android:enabled="false"
+                        android:enabled="true"
                         android:layout_marginLeft="@dimen/padding_15"
                         android:layout_marginRight="@dimen/padding_15"
                         android:layout_marginBottom="@dimen/padding_8"

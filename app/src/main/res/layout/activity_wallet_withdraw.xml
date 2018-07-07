@@ -46,7 +46,7 @@
 
                 <com.app.toza.custom.TfEditText
                     android:layout_weight="1"
-                    android:enabled="false"
+                    android:enabled="true"
                     android:layout_margin="@dimen/padding_15"
                     android:lines="1"
                     android:textColor="@color/colorPrimaryDark"
@@ -60,7 +60,7 @@
 
                 <com.app.toza.custom.TfEditText
                     android:layout_weight="1"
-                    android:enabled="false"
+                    android:enabled="true"
                     android:layout_margin="@dimen/padding_15"
                     android:lines="1"
                     android:textColor="@color/colorPrimaryDark"

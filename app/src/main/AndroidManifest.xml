@@ -21,7 +21,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan" >
 
 
-
         </activity>
         <activity
             android:name=".ui.LoginActivity"
@@ -40,6 +39,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".ui.ProfileActivity"
@@ -125,6 +125,11 @@
 
         <activity
             android:name=".ui.circlePayment.CreateNewCircleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.AddMoneyDetailedActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppBaseTheme"
             android:windowSoftInputMode="adjustNothing" />

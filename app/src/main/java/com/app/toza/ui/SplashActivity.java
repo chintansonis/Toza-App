@@ -150,9 +150,11 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
                     break;
             case R.id.txtRegister:
                 if(!PrefUtils.isLanguageSet(SplashActivity.this).equalsIgnoreCase("")) {
+
                     Intent intentRegister = new Intent(SplashActivity.this, RegisterActivity.class);
                     startActivity(intentRegister);
-                    finish();
+
+
                 }else {
                     Intent intentRegister = new Intent(SplashActivity.this, LanguageSelectionActivity.class)
                             .putExtra("type","2");
