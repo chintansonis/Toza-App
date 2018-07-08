@@ -45,6 +45,7 @@
         android:text="@string/login"
         android:layout_width="match_parent"
         app:isBold="true"
+        android:textColor="@color/colorError"
         android:layout_height="wrap_content" />
 
     <com.app.toza.MEditText.TextFieldBoxes
@@ -104,6 +105,7 @@
         android:text="@string/forgot_pass"
         android:gravity="end"
         app:isBold="true"
+        android:textColor="@color/colorError"
         android:padding="@dimen/padding_15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
